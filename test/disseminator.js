@@ -1,14 +1,14 @@
 'use strict';
-var events = require('events');
-var test = require('tape');
+const events = require('events');
+const test = require('tape');
 
-var Codec = require('../lib/codec');
-var Disseminator = require('../lib/disseminator');
-var Membership = require('../lib/membership');
-var MessageType = require('../lib/message-type');
-var Net = require('../lib/net');
+const Codec = require('../lib/codec');
+const Disseminator = require('../lib/disseminator');
+const Membership = require('../lib/membership');
+const MessageType = require('../lib/message-type');
+const Net = require('../lib/net');
 
-var codec = new Codec();
+const codec = new Codec();
 
 test('Disseminator honors bytesAvailable, dissemination limit and priority', function t(assert) {
     var membership = new events.EventEmitter();

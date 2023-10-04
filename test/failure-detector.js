@@ -1,20 +1,20 @@
 'use strict';
-var events = require('events');
-var test = require('tape');
+const events = require('events');
+const test = require('tape');
 
-var FailureDetector = require('../lib/failure-detector');
-var Member = require('../lib/member');
-var MessageType = require('../lib/message-type');
-var Net = require('../lib/net');
+const FailureDetector = require('../lib/failure-detector');
+const Member = require('../lib/member');
+const MessageType = require('../lib/message-type');
+const Net = require('../lib/net');
 
-var INTERVAL = 100;
-var MAX_TICKS = 3;
-var TICKS = Math.ceil(Math.random() * MAX_TICKS);
-var TICK_OFFSET = -0.5;
-var MEMBER_A = new Member({
+const INTERVAL = 100;
+const MAX_TICKS = 3;
+const TICKS = Math.ceil(Math.random() * MAX_TICKS);
+const TICK_OFFSET = -0.5;
+const MEMBER_A = new Member({
     host: 'localhost:1111'
 });
-var MEMBER_B = new Member({
+const MEMBER_B = new Member({
     host: 'localhost:2222'
 });
 

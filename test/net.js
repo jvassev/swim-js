@@ -1,12 +1,12 @@
 'use strict';
-var async = require('async');
-var test = require('tape');
+const async = require('async');
+const test = require('tape');
 
-var Codec = require('../lib/codec');
-var MessageType = require('../lib/message-type');
-var Net = require('../lib/net');
+const Codec = require('../lib/codec');
+const MessageType = require('../lib/message-type');
+const Net = require('../lib/net');
 
-var codec = new Codec();
+const codec = new Codec();
 
 test('Net can send and receive primitive messages', function t(assert) {
     var senderOpts = {

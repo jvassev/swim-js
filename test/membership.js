@@ -1,18 +1,18 @@
 'use strict';
-var events = require('events');
-var test = require('tape');
+const events = require('events');
+const test = require('tape');
 
-var FailureDetector = require('../lib/failure-detector');
-var Member = require('../lib/member');
-var Membership = require('../lib/membership');
-var MessageType = require('../lib/message-type');
-var Net = require('../lib/net');
+const FailureDetector = require('../lib/failure-detector');
+const Member = require('../lib/member');
+const Membership = require('../lib/membership');
+const MessageType = require('../lib/message-type');
+const Net = require('../lib/net');
 
-var SUSPECT_TIMEOUT = 10;
-var LOCAL = new Member({
+const SUSPECT_TIMEOUT = 10;
+const LOCAL = new Member({
     host: 'localhost:0000'
 });
-var MEMBER_A = new Member({
+const MEMBER_A = new Member({
     host: 'localhost:1111'
 });
 

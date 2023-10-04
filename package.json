@@ -1,40 +1,28 @@
 {
   "name": "swim",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Gossip protocol based on SWIM",
   "main": "index.js",
   "scripts": {
     "cover": "covert test/index -q",
-    "test": "npm run lint && node test/index | tap-spec"
+    "test": "node test/index | tap-spec"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrhooray/swim-js.git"
+    "url": "https://github.com/jvassev/swim-js.git"
   },
-  "keywords": [
-    "gossip",
-    "swim",
-    "failure",
-    "detection",
-    "membership"
-  ],
   "author": "Rui Hu <code@mrhooray.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mrhooray/swim-js/issues"
-  },
-  "homepage": "https://github.com/mrhooray/swim-js",
   "devDependencies": {
     "async": "^0.9.0",
     "covert": "^1.0.1",
     "metrics": "^0.1.9",
-    "jscs": "^1.10.0",
-    "jshint": "^2.6.0",
     "tap-spec": "^2.2.0",
     "tape": "^3.4.0"
   },
   "dependencies": {
     "clone": "^1.0.2",
-    "farmhash": "^2.0.0"
+    "debug": "^2.1.1",
+    "fnv-plus": "^1.3.1"
   }
 }
